@@ -1,0 +1,90 @@
+/* CSS Document */
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+	BASIC STRUCTURE
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+	
+}
+
+#header {
+	height: 100px;
+	
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+	
+}
+
+#content {
+	float: right;
+	width: 600px;
+	
+}
+
+#footer {
+	clear: both;
+	
+}
+
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+	COLORS AND FONTS
+color.adobe.com
+#8854DD
+#6CB491
+#65EDF4
+#FC9742
+#85EA4D
+background-color: #85EA4D for body
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
+body  {
+	font-family: "Gotham", "Helvetica Neue", "Helvetica, Arial", "sans-serif";
+	color:#ff3200;
+	background-image: url(../images/ripdefaults.jpeg)
+}
+
+#header, #content, #sidebar, #footer	{
+	background-color:rgba(0,255,240,0.81);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+	
+}
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	
+RESPONSIVE DESIGN
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-===-=-=-=-=-=-=-=*/
+@media screen and (max-width: 080px)	{
+	
+}
+@media screen and (max-width: 700px)	{
+	
+}
+@media screen and (max-width: 480px)	{
+	
+}
+/* Phones */
+@media only screen
+		and (min-device-width: 320px)
+		and (max-device-width: 568px)	{
+		
+}
