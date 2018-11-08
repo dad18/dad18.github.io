@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.13 - switch program</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var program = prompt("Enter F to convert Fahrenheit to Celsius\n\nEnter C to convert Celsius to Fahrenheit\n\nEnter D to convert Dollar to Yen\n\nEnter Y to convert Yen to Dollar").toUpperCase();
+		
+		
+		
+		switch(program) {
+			case "F":
+				var f = prompt("How many degrees is the temperature?");
+	
+	// convert fahrenheit to celsius here
+	var c = ([f-32]*5/9 );
+	alert(c);
+				break;
+				
+			case "C": 
+				var o = prompt("How many degress is the temperature in celius?");
+				var p = (o * 9/5 + 32);
+				alert(p)
+				break;
+			case "D":
+				var dollar = prompt("How much money(USD) Do you have?")
+	
+	
+	
+	// convert dollar to yen
+	var yen = dollar * 112.5060;
+	alert(yen.toFixed(2) + '  is how much you have in yen<br>');
+				break;
+			case "Y":var doll = prompt("How much money(Yen) do you have?")
+	
+	
+	
+	// convert dollar to yen
+	var yen1 = doll / 112.5060;
+	alert(yen1.toFixed(2) + '  is how much you have in the united states currency');
+				break;
+			default: alert("Invalid letter")
+		}
+		
+	</script>
+</body>
+</html>
