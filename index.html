@@ -2,41 +2,60 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>life o alex</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<title>8.5 - Dice Roller</title>
 </head>
 
 <body>
-<div id="wrapper">
-	<div id="header">
-			<h1>Alex page's website</h1>
-		</div>
-	
-	
-	<div id="content">
-		<h2>About me</h2>
-		<p>Do option command eject (The button to the right of f12) My name is ALex Page. TextTextTextTextTextTextTextTextTextTextTextText TextTextTextTextTextTextText Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
-	</div>
-	
-	
-	<div id="sidebar">
-			<h2>Navagation</h2>
-			<p><a href="index.html"><img src="images/HomeButton.png" alt="You are using an adblocker, please disable" width="60">  </a></p>
-			<p><a href="https://www.bing.com">Bing.com</a></p>
-			<p><a href="images.html">Images</a></p>
-	</div>
-	
-	<div id="footer">
-			<p>Copyright Alex Page&copy; 2018</p>
-	</div>
-	
-	
-	</div>
+	<script type="text/javascript">
+
+
+		var one= 0;
+		var two = 0;
+		var three = 0;
+		var four = 0;
+		var five = 0;
+		var six = 0;
+		function diceRoller() {
+			// calculate roll
+
+			var jake= Math.ceil(Math.random()*6);
+			return jake;
+			var michael = 1;
+			while(michael<=100)
+			{
+
+
+			var donkey = diceRoller();
+			document.write(" "+ donkey)
+			if (donkey == 1)
+			{
+				one++
+			}
+				else if (donkey == 2)	{
+				two++
+			}	else if (donkey == 3)	{
+				three++
+			}	else if (donkey == 4)	{
+				four++
+			} else if (donkey == 5)	{
+				five++
+			}	else if (donkey == 6)	{
+				six++
+			}
+			michael++
+		}
+
+
+		document.write("<br><br>"+"one was printed "	+ one + " Times")
+		document.write("<br><br>"+"two was printed "	+ two + " Times")
+		document.write("<br><br>"+"three was printed "	+ three + " Times")
+		document.write("<br><br>"+"four was printed "	+ four + " Times")
+		document.write("<br><br>"+"five was printed "	+ five + " Times")
+		document.write("<br><br>"+"six was printed "	+ six + " Times")
+
+
+		// call function and print return value
+		document.write(diceRoller()+ "Is the number returned");
+	</script>
 </body>
 </html>
-
-
-
-
-
-				
