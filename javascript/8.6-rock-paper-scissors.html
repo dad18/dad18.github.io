@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.6 - Rock, Paper, Scissors</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+
+
+		function compare(p, c) {
+			if(p == c){
+				alert("Tie! Try again!");
+			}	else if (p == "Rock" && c == "Scissors") {
+			alert("You won!");}
+			else if (p == "Scissors" && c == "Paper")	{
+				alert("You won!");
+			}
+			else if (p == "Paper" && c == "Rock")	{
+				alert("You won!");
+
+			}
+			else if (c == "Rock" && p== "Scissors") {
+			alert("You lost to a bot! YOU BOT");
+		}
+			else if (c == "Scissors" && p == "Paper")	{
+				alert("You lost to a bot! YOU BOT");
+			}
+			else if (c == "Paper"  && p == "Rock")	{
+				alert("REEEEEEEEEEEEEEREEEEEEEEEEEEEEEREEEEEEREEEEEEREEEEEEEEREEEEEEREEEE");
+
+			}
+			// compare inputs
+
+
+			// print who wins
+
+
+		}
+
+		// calculate computer choice
+		var c =
+		Math.random();
+		if(c < 0.333 ) {
+			c = "Rock";
+		}
+		else if (c > .333 && c < .666)	{
+			c = "Paper";
+		}
+		else if(c > .666){
+		 c = "Scissors";
+	 }
+		var p=prompt("Lets play rock paper scissors! Please choose either Rock, Paper, or scissors.")
+		// call function
+		compare(p, c);
+	</script>
+</body>
+</html>
