@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.2</title>
+	<script type="text/javascript">
+		
+		var CookieClicker= {
+			cookies: 0,
+			click: function()	{
+				this.cookies++;
+				if (typeof(Storage) !== "undefined") {
+					localStorage.setItem("cookies", this.cookies);
+				}	
+				this.update_screen();
+			},
+			update_screen: function ()	{
+				document.getElementById("output").innerHTML = this.cookies;
+			},
+		init: function()	{
+			if (typeof(Storage) !== "undefined")	{
+				var c = localStorage.getItem("cookies");
+				if(c != null)	{
+					CookieClicker.cookies = Number(c);
+					CookieClicker.update_screen();
+					
+				}
+			} else {
+				console.log("Sorry, your browser does not support web storage");
+			}
+		}	
+	}
+		window.onload = CookieClicker.init;
+
+	
+	
+	
+	</script>
+</head>
+
+<body>
+<a href="JavaScript:CookieClicker.click();"><img src="../images/cookie.png" alt="Cookie"> </a>
+	<p id="output"></p>
+</body>
+</html>

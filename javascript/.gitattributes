@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.2</title>
+	<script type="text/javascript">
+	var cookies = 0;
+		function cokie_clicker()	{
+			cookies++
+			document.getElementById("output").innerHTML = cookies;
+		}
+	
+	
+	
+	
+	</script>
+</head>
+
+<body>
+<a href="JavaScript:cookie_clicker()"><img src="file:///133iMac8/Users/mac1/Documents/GitHub/dad18.github.io/images/cookie.png" alt="Cookie"> </a>
+	<p id="output"></p>
+</body>
+</html>
