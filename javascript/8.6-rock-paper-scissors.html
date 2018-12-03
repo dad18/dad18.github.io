@@ -13,24 +13,70 @@
 			if(p == c){
 				alert("Tie! Try again!");
 			}	else if (p == "Rock" && c == "Scissors") {
-			alert("You won!");}
+			alert("You won against scissors");}
 			else if (p == "Scissors" && c == "Paper")	{
-				alert("You won!");
+				alert("You won against paper");
 			}
 			else if (p == "Paper" && c == "Rock")	{
-				alert("You won!");
+				alert("You won against rock");
 
 			}
 			else if (c == "Rock" && p== "Scissors") {
-			alert("You lost to a bot! YOU BOT");
+			alert("You lost to Scissors");
 		}
 			else if (c == "Scissors" && p == "Paper")	{
-				alert("You lost to a bot! YOU BOT");
+				alert("You lost to Paper");
 			}
 			else if (c == "Paper"  && p == "Rock")	{
-				alert("REEEEEEEEEEEEEEREEEEEEEEEEEEEEEREEEEEEREEEEEEREEEEEEEEREEEEEEREEEE");
+				alert("You lost to paper");
 
+			}	else if (c == "Rock" && p == "Lizard")	{
+				alert("You lost to Lizard")
 			}
+			else if (c == "Lizard" && p == "Rock")	{
+				alert("You won to Lizard")
+			}
+			else if (c == "Lizard" && p == "Spock")	{
+				alert("You lost to Lizard")
+			}
+			else if (c == "Spock" && p == "Lizard")	{
+				alert("You won to Spock")
+			}
+			else if (c == "Spock" && p == "Rock")	{
+				alert("You won to Spock")
+			}
+			else if (c == "Rock" && p == "Spock")	{
+				alert("You lost to Rock")
+			}
+
+			else if (c == "Scissors" && p == "Lizard")	{
+				alert("You won to Scissors")
+			}
+			else if (c == "Lizard" && p == "Scissors")	{
+				alert("You lost to Lizard")
+			}
+			else if (c == "Lizard" && p == "Paper")	{
+				alert("You won to Lizard")
+			}
+			else if (c == "Paper" && p == "Lizard")	{
+				alert("You lost to Paper")
+			}
+			else if (c == "Paper" && p == "Spock")	{
+				alert("You lost to paper")
+			}
+			else if (c == "Spock" && p == "Paper")	{
+				alert("You won to Spock")
+			}
+			else if (c == "Spock" && p == "Rock")	{
+				alert("You lost to Spock")
+			}
+			else if (c == "Rock" && p == "Spock")	{
+				alert("You beat Rock")
+			}
+
+
+
+
 			// compare inputs
 
 
@@ -42,18 +88,31 @@
 		// calculate computer choice
 		var c =
 		Math.random();
-		if(c < 0.333 ) {
+		if(c < 0.2 ) {
 			c = "Rock";
 		}
-		else if (c > .333 && c < .666)	{
+		else if (c > .2 && c < .4)	{
 			c = "Paper";
 		}
-		else if(c > .666){
+		else if(c > 0.4 && c < 0.6){
 		 c = "Scissors";
+	 }	else if(c > 0.6 && c < 0.8){
+	 c = "Lizard";	} else if(c > 0.8)	{
+		 c = Spock
 	 }
-		var p=prompt("Lets play rock paper scissors! Please choose either Rock, Paper, or scissors.")
+
+
+
+
+
+		var p=prompt("Lets play rock paper scissors lizard spock! Please choose one of the options.")
 		// call function
 		compare(p, c);
+
+
+		location.reload();
+
 	</script>
+	<meta http-equiv="refresh" content="3">
 </body>
 </html>

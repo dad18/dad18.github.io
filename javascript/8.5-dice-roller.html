@@ -7,20 +7,59 @@
 
 <body>
 	<script type="text/javascript">
-		function diceRoller() {
+
+
+
+		function dice() {
 			// calculate roll
-			var roll = 1;
-			
-			
-			
-			
-			// return result
-			return roll;
+
+			var coolmath= Math.ceil(Math.random()*6);
+			return coolmath;
+		}
+
+
+		function diceRoller()	{
+			var one= 0;
+			var two = 0;
+			var three = 0;
+			var four = 0;
+			var five = 0;
+			var six = 0;
+			for (var i = 1; i <= 100; i++)
+			{
+
+
+			var roll = dice();
+			document.write(" "+ roll);
+			if (roll == 1)
+			{
+				one++;
+			}
+				else if (roll == 2)	{
+				two++;
+			}	else if (roll == 3)	{
+				three++;
+			}	else if (roll == 4)	{
+				four++;
+			} else if (roll == 5)	{
+				five++;
+			}	else if (roll == 6)	{
+				six++;
+			}
+		}
+		document.write("<br> 1 rolled " + one + " times.<br>");
+		document.write("2 rolled " + two + " times.<br>");
+		document.write("3 rolled " + three + " times.<br>");
+		document.write("4 rolled " + four + " times.<br>");
+		document.write("5 rolled " + five + " times.<br>");
+		document.write("6 rolled " + six + " times.<br>");
+
+
 		} // end function
-		
-		
+
+
 		// call function and print return value
-		document.write(diceRoller());
+		diceRoller();
 	</script>
 </body>
 </html>
