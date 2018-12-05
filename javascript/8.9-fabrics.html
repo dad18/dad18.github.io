@@ -4,19 +4,32 @@
 <meta charset="UTF-8">
 <title>8.9 Fab Fabrics</title>
 </head>
+<style>
+.red {}
+</style>
 
 <body>
 	<script type="text/javascript">
 		function calculateSubtotal(numberOfRolls) {
-			
+			return numberOfRolls * 20;
+
 		}
-		
+
+		var color = prompt("What color roll do you want?");
+		var rolls = prompt("How many rolls do you want?");
+		var thing = confirm("Press cancel if you would like to checkout, ok to buy smore rolls");
+		if (thing == true)	var color2 = prompt("What color roll do you want?");
+		var rolls2 = prompt("How many rolls do you want?")
+
+document.write(  calculateSubtotal(rolls) + " In " + color + " and " + calculateSubtotal(rolls2) + " In " +color2);
+
+
 		// ask the user what color roll they want
-		
+
 		// ask the user how many rolls they want
-		
+
 		// print the result using your function
-		
+
 	</script>
 </body>
 </html>
